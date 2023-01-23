@@ -1,0 +1,90 @@
+POST http://localhost:3333/api/services
+Content-Type: application/json
+
+{
+    "name": "Algum Serviço 1",
+    "description": "Descrição do serviço 1",
+    "price": 1800,
+    "image": "https://www.shutterstock.com/image-photo/earth-night-holding-human-hands-600w-1063994879.jpg"
+}
+
+###
+GET http://localhost:3333/api/services
+
+###
+GET http://localhost:3333/api/services/63c9e7c8350a6d180d9e2d70
+
+###
+DELETE http://localhost:3333/api/services/63c9e406a3441e465fc5a75d
+
+###
+PUT http://localhost:3333/api/services/63cf0014dd6a5b67f071d7ee
+Content-Type: application/json
+
+{
+    "name": "Algum Serviço 2",
+    "description": "Descrição do serviço 2",
+    "price": 2800,
+    "image": "https://www.shutterstock.com/image-photo/earth-night-holding-human-hands-600w-1063994879.jpg"
+}
+
+###
+POST http://localhost:3333/api/parties/
+Content-Type: application/json
+
+{
+    "title": "Alguma festa 3",
+    "author": "Matheus Nery",
+    "description": "Descrição da festa 1",
+    "budget": 3000,
+    "image": "https://www.shutterstock.com/image-photo/earth-night-holding-human-hands-600w-1063994879.jpg",
+    "services": [
+       {
+            "name": "Algum Serviço 1",
+            "description": "Descrição do serviço 1",
+            "price": 1800,
+            "image": "https://www.shutterstock.com/image-photo/earth-night-holding-human-hands-600w-1063994879.jpg"
+        },
+        {
+            "name": "Algum Serviço 2",
+            "description": "Descrição do serviço 2",
+            "price": 3300,
+            "image": "https://www.shutterstock.com/image-photo/earth-night-holding-human-hands-600w-1063994879.jpg"
+        }
+    ]
+}
+
+###
+GET http://localhost:3333/api/parties/
+
+###
+GET http://localhost:3333/api/parties/63cf06527bf80878fd2a384f
+
+###
+DELETE http://localhost:3333/api/parties/63cf05e67bf80878fd2a384b
+
+###
+PUT http://localhost:3333/api/parties/63cf06aa4bb8659e6585b328
+Content-Type: application/json
+
+{
+    "title": "Alguma festa 4",
+    "author": "Matheus Nery de Souza Ferreira",
+    "description": "Descrição da festa 4",
+    "budget": 450,
+    "image": "https://www.shutterstock.com/image-photo/earth-night-holding-human-hands-600w-1063994879.jpg",
+    "services": [
+       {
+            "name": "Algum Serviço 11",
+            "description": "Descrição do serviço 1",
+            "price": 100,
+            "image": "https://www.shutterstock.com/image-photo/earth-night-holding-human-hands-600w-1063994879.jpg"
+        },
+        {
+            "name": "Algum Serviço 22",
+            "description": "Descrição do serviço 2",
+            "price": 300,
+            "image": "https://www.shutterstock.com/image-photo/earth-night-holding-human-hands-600w-1063994879.jpg"
+        }
+    ]
+}
